@@ -10,10 +10,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
+"Plugin 'vim-syntastic/syntastic'
+"Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'zhou13/vim-easyescape'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'kshenoy/vim-signature'
+Plugin 'kana/vim-fakeclip'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
@@ -39,7 +40,8 @@ au BufNewFile, BufRead *.py
     \ set fileformat=unix
 set encoding=utf-8
 
-let python_highlight_all=1
+"let python_highlight_all=1
+let python_highlight_error_highlight=0
 syntax on
 set nu
 
@@ -57,3 +59,8 @@ if &term =~ '256color'
 	set t_ut=
 endif
 set t_Co=256
+inoremap <C-v> <ESC>"+pa
+vnoremap <C-c> "+y
+vnoremap <C-d> "+d
+
+set clipboard=unnamedplus
