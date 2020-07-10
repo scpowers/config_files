@@ -1,0 +1,18 @@
+Other software to install:
+VcXsrv (XLaunch) for displaying plots from the Ubuntu (WSL) command line
+	need to update .bashrc:
+	# update local display for plotting in command line
+	export DISPLAY=localhost:0.0
+
+	# try to suppress warning
+	export XDG_RUNTIME_DIR=/tmp/runtime-scpowers
+	export RUNLEVEL=3
+
+To actually get Vundle working, you have to clone from the repository via curl
+	and then run something like :VundleInstall.
+	Should then be able to run :PluginInstall to install plugins
+	from the .vimrc file
+
+Be careful when copying over the .tmux.conf file...if it says you have
+	syntax errors, just rename it to some test_file.txt, start a fresh
+	.tmux.conf file, and add one line at a time.
