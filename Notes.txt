@@ -16,3 +16,9 @@ To actually get Vundle working, you have to clone from the repository via curl
 Be careful when copying over the .tmux.conf file...if it says you have
 	syntax errors, just rename it to some test_file.txt, start a fresh
 	.tmux.conf file, and add one line at a time.
+
+Check out the YCM documentation to get it properly installed/compiled:
+https://github.com/ycm-core/YouCompleteMe
+
+Replace the default .ycm_extra_conf.py file in ~/.vim/bundle/youcompleteme with
+	the given one
