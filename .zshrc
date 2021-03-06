@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:$PATH
 alias ls="ls -GFlash"
+alias vim="mvim -v"
 export PS1='%F{162}%~%f %F{cyan}$%f '
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
