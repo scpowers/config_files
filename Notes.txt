@@ -13,12 +13,7 @@ To actually get Vundle working, you have to clone from the repository via curl
 	Should then be able to run :PluginInstall to install plugins
 	from the .vimrc file
 
-Be careful when copying over the .tmux.conf file...if it says you have
-	syntax errors, just rename it to some test_file.txt, start a fresh
-	.tmux.conf file, and add one line at a time.
-
 Check out the YCM documentation to get it properly installed/compiled:
 https://github.com/ycm-core/YouCompleteMe
 
-Replace the default .ycm_extra_conf.py file in ~/.vim/bundle/youcompleteme with
-	the given one
+Make sure you run the install.py file with /usr/local/bin/pytho3 or /usr/bin/python3, it won't work with conda python versions. Also make sure you have xcode and command line tools installed, along with macvim. 
